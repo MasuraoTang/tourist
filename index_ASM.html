@@ -1,0 +1,60 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./OpenLayer_webMap/libs/v6.4.3-dist/ol.css">
+    <link rel="stylesheet" href="./OpenLayer_webMap/libs/v6.4.3-dist/ol-ext.css">
+    <link rel="stylesheet" href="./style_ASM.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-1">
+            <div class="sidebar">
+                <h3>Base layers</h3>
+                <input type="radio" name="baseLayerRadioButton" value="OSMStandard" checked>OSMStandard<br>
+                <input type="radio" name="baseLayerRadioButton" value="OSMHumantarian">OSM Humantarian<br>
+                <input type="radio" name="baseLayerRadioButton" value="BingMaps">Bing maps<br>
+
+                <h3>Topics</h3>
+                <input type="checkbox" name="ratserTileLayerCheckbox" value="ScenicView">The Scenic View: Sonata<br>
+                <input type="checkbox" name="ratserTileLayerCheckbox" value="HistoryMeetsArt">History Meets Art:
+                Requiem<br>
+                <input type="checkbox" name="ratserTileLayerCheckbox" value="ExperienceLikeALocal">Experience Like A 
+                Local: Capriccio<br>
+                <input type="checkbox" name="ratserTileLayerCheckbox" value="CoffeeAndDrinks">Coffee And Drinks: Rhapsody<br><br>
+                <button type="button" class="tracking">HOME</button>
+                <div class="grid-2">
+                    <div class="column-menu" id='menu-information'>
+                        <p id='amenityName'>Welcome to Salzburg!</p><br><br>
+                        <img id='amenityImage' src="./OpenLayer_webMap/data/SBG_images/welcome.jpg"
+                            alt="Austrian_Flag"><br>
+                        <p id="amenityInfo"></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="grid-3">
+            <div id="js-map" class="map"></div>
+        </div>
+    </div>
+
+    <div class="popover-info">
+        <p id="popover-text"></p>
+    </div>
+
+    <div class="overlay-container">
+        <span class="overlay-text" id="amenityOpeningHour"></span><br>
+        <span class="overlay-addition" id="amenityAccess"></span><br>
+    </div>
+
+    
+
+    <script src="./OpenLayer_webMap/libs/v6.4.3-dist/ol.js "></script>
+    <script src="./OpenLayer_webMap/libs/v6.4.3-dist/ol-ext.js "></script>
+    <script type='module' src="./main_ASM.js"></script>
+</body>
+
+</html>

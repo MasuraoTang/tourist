@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns:  20vw 80vw;
+    grid-template-rows: 100vh;
+}
+
+.grid-1 {
+    height: 100%;
+    width: 100%;
+    /*background-color: #555*/
+}
+
+.grid-3 {
+    height: 100%;
+    width: 100%
+}
+
+.grid-2 {
+    height: 50%;
+    width: 100%
+}
+
+.sidebar{
+    margin-left: 0px;
+}
+
+.tracking{
+    margin: 0 auto; 
+}
+
+#amenityName {
+    margin: 0;
+    padding: 22px;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-size: 24px;
+}
+
+#amenityImage {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+    align-items: center;
+    /*margin-right: 10px;*/
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+#popover-text {
+    background-color: #9c9a9a;
+    font-size: 18px;
+}
+
+.overlay-container{
+    background-color: #555;
+    width: 150 px;
+    color: #fff;
+    text-align: center;
+    border-radius: 1px;
+    padding: 2px 0;
+    position: absolute;
+    z-index:1;
+    bottom: 100%;
+    left:50%;
+    /*margin-top: 10px;*/
+    margin-left: -20px;
+    /*margin-left: -80px;*/
+}
+
+.overlay-container #feature-addition::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
